@@ -3,6 +3,10 @@
   font-size: 12pt;
 }
 
+body {
+  background: #333;
+}
+
 .chat {
   width: 400px;
   height: 90%;
@@ -46,4 +50,8 @@
   text-align: right;
   margin-left: auto;
   background: #DDD;
+}
+
+input {
+  border-radius: 7px;
 }
