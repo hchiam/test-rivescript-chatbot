@@ -1,5 +1,11 @@
+! version = 2.0
+
 + *
-- Hi! Tell me your name "My name is ..."
+- Hi! Please tell me your name ("My name is ...")
+
++ (hi|hello|hey)
+- Hi there! Please tell me your name ("My name is ...")
+- Hello! Please tell me your name ("My name is ...")
 
 + what is my name
 * <get name> != undefined => You are <get name>.
@@ -7,3 +13,23 @@
 
 + my name is *
 - <set name={formal}<star>{/formal}>Good to know, I'll remember that your name is {formal}<star>{/formal}.
+
++ (login|log in)
+- Username?{topic=login_init}
+
+> topic login_init
+  + *
+  - <set username=<star>>Password?{topic=ask_pwd}
+< topic
+
+> topic ask_pwd
+  + *
+  * true == <call>validate <get username> <star></call> => You're now logged in! :){topic=random}
+  - Invalid login. Please enter your username{topic=login_init}
+< topic
+
+> object validate javascript
+  var username = args[0];
+  var pwd = args[1];
+  return username=="h" && pwd==1; // loginCallbackTrue(username, pwd);
+< object
