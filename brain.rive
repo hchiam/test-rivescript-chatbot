@@ -1,0 +1,9 @@
++ *
+- Hi! Tell me your name "My name is ..."
+
++ what is my name
+* <get name> != undefined => You are <get name>.
+- You didn't tell me your name yet.
+
++ my name is *
+- <set name={formal}<star>{/formal}>Good to know, I'll remember that your name is {formal}<star>{/formal}.
