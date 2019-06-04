@@ -60,7 +60,7 @@
 - You didn't tell me your name yet.
 
 + my name is *
-- <set name={formal}<star>{/formal}>Good to know, I'll remember that your name is {formal}<star>{/formal}.
+- <set name={formal}<star>{/formal}>I'll remember that your name is {formal}<star>{/formal}. You can ask me for your name later.
 
 + (login|log in)
 - Username?{topic=login_init}
