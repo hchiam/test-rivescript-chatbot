@@ -9,9 +9,12 @@ body {
 
 .chat {
   width: 400px;
-  height: 90%;
+  height: 70%;
   position: fixed;
   overflow: scroll;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding: 5px;
+  background: #444;
 }
 
 .actions {
@@ -54,6 +57,11 @@ body {
 
 input {
   border-radius: 7px;
+  padding-left: 7px;
+}
+
+input:hover {
+  background: lightgrey;
 }
 
 #link-to-another-chatbot {
