@@ -56,7 +56,9 @@
 - Hello! Please tell me your name ("My name is ...")
 
 + what is my name
-* <get name> != undefined => You are <get name>.
+* <get name> != undefined => {random}
+  ^ You are <get name>. (To log in, say "login".) |
+  ^ Your name is <get name>. (Psst! You can log in.) {/random}
 - You didn't tell me your name yet.
 
 + my name is *
