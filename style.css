@@ -16,9 +16,9 @@ body {
 
 .actions {
   position: fixed;
-  bottom: 0;
+  bottom: 10%;
   display: block;
-  width: 100%;
+  width: 90%;
 }
 
 .actions input{
@@ -54,4 +54,18 @@ body {
 
 input {
   border-radius: 7px;
+}
+
+#link-to-another-chatbot {
+  position: fixed;
+  bottom: 0;
+  color: grey;
+}
+
+#link-to-another-chatbot a {
+  color: grey;
+}
+
+#link-to-another-chatbot a:hover {
+  color: greenyellow;
 }
