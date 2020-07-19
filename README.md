@@ -1,4 +1,4 @@
-# test-rivescript-chatbat
+# test-rivescript-chatbot
 Test chatbot using RiveScript. Demo: https://codepen.io/hchiam/pen/arXpax
 
 ## General RiveScript Info:
